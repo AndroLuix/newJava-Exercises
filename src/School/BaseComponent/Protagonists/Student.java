@@ -1,7 +1,6 @@
-package School.Human;
+package School.BaseComponent.Protagonists;
 
 import Employee.Employee;
-import Person.Person;
 
 import java.util.UUID; // crea un codice univoco random
 
@@ -11,7 +10,14 @@ public class Student extends Employee {
         super(name, surname, age, UUID.randomUUID().toString());
     }
 
+     public Student(){
+        super(UUID.randomUUID().toString());
+     };
 
+    @Override
+    public String get(){
+        return super.get();
+    }
 
 
 }
