@@ -10,6 +10,10 @@ public class Employee extends Person {
         this.set(name, surname,age);
         setNumberEmployee(number);
     }
+    public Employee(String number){
+        super();
+        setNumberEmployee(number);
+    }
     private void setNumberEmployee(String number){
         this.numberEmployee = number;
     }

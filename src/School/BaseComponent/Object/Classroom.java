@@ -1,9 +1,8 @@
-package School.Object;
+package School.BaseComponent.Object;
 
-import School.Exception.NotFoundException;
-import School.Exception.StudentNotFoundException;
-import School.Human.Student;
-import School.Human.Teacher;
+import School.BaseComponent.Exception.NotFoundException;
+import School.BaseComponent.Protagonists.Student;
+import School.BaseComponent.Protagonists.Teacher;
 
 import java.util.ArrayList;
 

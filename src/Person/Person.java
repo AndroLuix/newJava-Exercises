@@ -1,10 +1,18 @@
-package Person;
+package Person ;
 
-public class Person {
+import School.CreationComponent.Builder;
+
+public class Person extends Builder {
     private String name;
     private String surname;
     private int age;
 
+   public Person( String name,
+            String surname,
+            int age){
+        this.name = name; this.surname = surname; this.age =  age;
+    }
+    public Person(){};
     public void set(
             String name,
             String surname,
@@ -26,7 +34,11 @@ public class Person {
     }
 
 
-    public String get(){
+    protected String get(){
         return this.surname+ " "+ this.name+ ", " + this.age;
+    }
+
+    public void update(){
+        this.generateData(this);
     }
 }
